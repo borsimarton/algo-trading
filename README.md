@@ -3,19 +3,19 @@ Test and improve trading strategies using random forest methods.
 
 Short description of the files:
 
-	Candle.h			representation of a single candle
+	Candle.h				representation of a single candle
 	CommonFunctions.h		a few short and simple functions
-	Dataset.h			container for the raw candle data with technical analysis tools
+	Dataset.h				container for the raw candle data with technical analysis tools
 	DecisionTree.h			representation of a single binary decision tree
 	ExampleStrategy.h		simple example strategy used in Tester.h
-	FitInfo.h			structs containing information about the performed fit
+	FitInfo.h				structs containing information about the performed fit
 	Indicators.h			simple indicators available in Dataset.h
-	Journal.h			container for the trades generated in Tester.h
+	Journal.h				container for the trades generated in Tester.h
 	LearningData.h			container for the machine learning data obtained from Journals
 	Metaparameters.h		structs containing metaparameters
-	Random.h			random number generating functions
+	Random.h				random number generating functions
 	RandomForest.h			representation of random forests with fitter functions
-	Tester.h			generator of the trading Journal using the included strategy
+	Tester.h				generator of the trading Journal using the included strategy
 
 
 Standard application of the code:
