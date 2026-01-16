@@ -34,6 +34,7 @@ Journal tester(int startTime, int endTime, const vector<Dataset*>& dataVector)
 	if (startIndex == -1 || endIndex == -1)
 	{
 		cout << "wrong startTime or endTime in tester" << endl;
+		return Journal();
 	}
 
 	//trading constants
@@ -94,5 +95,6 @@ Journal tester(int startTime, int endTime, const vector<Dataset*>& dataVector)
 	return closedTrades;
 
 }
+
 
 
