@@ -151,7 +151,7 @@ void Journal::randomSplit(int subsetSize, const string& fileName1, const string&
 {
 	if (subsetSize > getSize())
 	{
-		cout << "error: subsetSize is too high in Journal::randomSPlit" << endl;
+		cout << "error: subsetSize is too high in Journal::randomSplit" << endl;
 	}
 
 	Journal subset1;
@@ -248,3 +248,4 @@ void saveTrades(const Journal& trades, const string& fileName)
 	myFile.close();
 
 }
+
