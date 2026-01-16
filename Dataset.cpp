@@ -411,7 +411,7 @@ bool Dataset::bullishSFP(int index) const
 {
 	if (index < 1 || index >= candles.size())
 	{
-		cout << "error: wrong index is Dataset::bullishSFP" << endl;
+		cout << "error: wrong index in Dataset::bullishSFP" << endl;
 		return false;
 	}
 	return candles[index]->getPriceChange() > 0 && candles[index - 1]->getPriceChange() < 0 && candles[index]->getDownWick() < candles[index - 1]->getDownWick();
@@ -423,7 +423,7 @@ bool Dataset::bearishSFP(int index) const
 {
 	if (index < 1 || index >= candles.size())
 	{
-		cout << "error: wrong index is Dataset::bearishSFP" << endl;
+		cout << "error: wrong index in Dataset::bearishSFP" << endl;
 		return false;
 	}
 	return candles[index]->getPriceChange() < 0 && candles[index - 1]->getPriceChange() > 0 && candles[index]->getUpWick() > candles[index - 1]->getUpWick();
@@ -1308,4 +1308,5 @@ int Dataset::obvBearDiv(int index, int divRange) const
 		}
 	}
 	return -1;
+
 }
