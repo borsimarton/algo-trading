@@ -187,6 +187,7 @@ const TradeInfo& Journal::operator[](int index) const
 	if (index >= trades.size())
 	{
 		cout << "error: index too high in Journal::operator[] const" << endl;
+		return *trades[0];
 	}
 	return *trades[index];
 }
@@ -197,6 +198,7 @@ TradeInfo& Journal::operator[](int index)
 	if (index >= trades.size())
 	{
 		cout << "error: index too high in Journal::operator[]" << endl;
+		return *trades[0];
 	}
 	return *trades[index];
 }
@@ -244,4 +246,5 @@ void saveTrades(const Journal& trades, const string& fileName)
 		myFile << "\t" + trades[i].getParameters()->dataText() << endl;
 	}
 	myFile.close();
+
 }
