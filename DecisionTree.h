@@ -15,7 +15,7 @@ class Node
 		int id;
 		bool decision;
 
-		//addedd for testing
+		//added for testing
 		int nodeSize;
 		double nodeIncome;
 
@@ -88,4 +88,5 @@ class DecisionTree
 
 
 };
+
 
